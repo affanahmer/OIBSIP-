@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+a {
+  color: #bb86fc;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background: #1e1e1e;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #2c2c2c;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+button {
+  background: #bb86fc;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #9965f4;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #1e1e1e;
+  margin-bottom: 20px;
+}
+
+.nav-links a {
+  margin-left: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.error {
+  color: #cf6679;
+}
+
+.success {
+  color: #03dac6;
+}
+
+.stepper {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.step {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  background: #2c2c2c;
+  border-radius: 8px;
+  margin: 0 5px;
+}
+
+.step.active {
+  background: #bb86fc;
+  color: #000;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
