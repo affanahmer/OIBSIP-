@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app-card">
+        <header class="app-header">
+            <h1>Task Tracker</h1>
+            <p class="subtitle">Organise your daily workflow</p>
+        </header>
+
+        <form id="taskForm" class="task-form">
+            <input type="text" id="taskInput" placeholder="What needs to be done?" autocomplete="off" required>
+            <button type="submit" id="addBtn">Add Task</button>
+        </form>
+
+        <section class="list-section">
+            <div class="section-header">
+                <h2>Pending Tasks</h2>
+                <span class="count-badge" id="pendingCount">0</span>
+            </div>
+            <ul id="pendingList" class="task-list"></ul>
+            <p class="empty-state" id="pendingEmpty">No pending tasks. You're all caught up!</p>
+        </section>
+
+        <section class="list-section">
+            <div class="section-header">
+                <h2>Completed Tasks</h2>
+                <span class="count-badge completed-badge" id="completedCount">0</span>
+            </div>
+            <ul id="completedList" class="task-list"></ul>
+            <p class="empty-state" id="completedEmpty">No completed tasks yet.</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

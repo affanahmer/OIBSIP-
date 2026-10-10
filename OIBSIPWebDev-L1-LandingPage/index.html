@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroDesk - The Floating Workspace</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f7f6;
+            color: #333333;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #1e3a8a;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4b5563;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+        .hero {
+            background-color: #1e3a8a;
+            color: #ffffff;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto 25px auto;
+            color: #dbeafe;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background-color: #f59e0b;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .cta-btn:hover {
+            background-color: #d97706;
+        }
+
+        .section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 40px;
+            color: #1e3a8a;
+        }
+
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            flex: 1 1 280px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #2563eb;
+        }
+
+        .card p {
+            font-size: 15px;
+            color: #4b5563;
+        }
+
+        .testimonial-card {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            flex: 1 1 400px;
+            border-left: 5px solid #2563eb;
+            border-top: 1px solid #e5e7eb;
+            border-right: 1px solid #e5e7eb;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            margin-bottom: 12px;
+            color: #374151;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: #1e3a8a;
+            font-style: normal;
+        }
+
+        footer {
+            background-color: #0f172a;
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        footer p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+                padding: 15px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">AeroDesk</div>
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Redefine Your Posture with Magnetic Lift</h1>
+        <p>AeroDesk uses silent electromagnetic elevation to adapt seamlessly to your workday workflow.</p>
+        <a href="#features" class="cta-btn">Explore Features</a>
+    </section>
+
+    <section class="section" id="features">
+        <h2>Why AeroDesk?</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>Silent Transition</h3>
+                <p>Zero-friction levitation allows instant height transitions with whisper-quiet stability.</p>
+            </div>
+            <div class="card">
+                <h3>Smart Sensors</h3>
+                <p>Built-in posture sensors gently remind you when it is time to cycle between sitting and standing.</p>
+            </div>
+            <div class="card">
+                <h3>Integrated Cable Track</h3>
+                <p>Keep your setup completely clean with concealed magnetic conduits across the base.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="reviews">
+        <h2>User Reviews</h2>
+        <div class="cards-container">
+            <div class="testimonial-card">
+                <p>"Switching between standing and sitting feels completely effortless. The build quality is unmatched."
+                </p>
+                <span class="testimonial-author">- Affan Ahmer, Lead Designer</span>
+            </div>
+            <div class="testimonial-card">
+                <p>"The posture sensor notifications drastically cut down my afternoon fatigue during long code
+                    sprints."</p>
+                <span class="testimonial-author">- Ahsan Ali, Software Engineer</span>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2026 AeroDesk Technologies. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Support</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

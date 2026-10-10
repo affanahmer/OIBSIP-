@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="auth-card" id="authCard">
+        <div class="tab-switcher">
+            <button type="button" class="tab-btn active" id="loginTabBtn">Login</button>
+            <button type="button" class="tab-btn" id="registerTabBtn">Register</button>
+        </div>
+
+        <!-- Login Form -->
+        <form id="loginForm" class="auth-form">
+            <h2>Welcome Back</h2>
+            <p class="form-desc">Enter your credentials to access your account.</p>
+
+            <div class="form-group">
+                <label for="loginIdentifier">Username or Email</label>
+                <input type="text" id="loginIdentifier" placeholder="johndoe or name@example.com" autocomplete="off"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" placeholder="••••••••" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Login</button>
+            <div class="status-msg error" id="loginError"></div>
+        </form>
+
+        <!-- Registration Form -->
+        <form id="registerForm" class="auth-form hidden">
+            <h2>Create Account</h2>
+            <p class="form-desc">Sign up to get access to the dashboard.</p>
+
+            <div class="form-group">
+                <label for="regIdentifier">Username or Email</label>
+                <input type="text" id="regIdentifier" placeholder="affan or name@example.com" autocomplete="off"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="regPassword">Password</label>
+                <input type="password" id="regPassword" placeholder="Minimum 8 chars, 1 number" required>
+                <span class="hint-text">Must be at least 8 characters long and contain at least 1 number.</span>
+            </div>
+
+            <button type="submit" class="submit-btn">Register</button>
+            <div class="status-msg" id="registerStatus"></div>
+        </form>
+    </div>
+
+    <!-- Protected Dashboard Area -->
+    <div class="dashboard-card hidden" id="dashboardCard">
+        <h2>Protected Dashboard</h2>
+        <p class="welcome-text">Logged in as: <strong id="currentUserDisplay"></strong></p>
+        <div class="dashboard-content">
+            <p>This is a protected area only viewable by authenticated users.</p>
+        </div>
+        <button type="button" class="logout-btn" id="logoutBtn">Log Out</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
